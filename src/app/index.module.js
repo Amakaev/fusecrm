@@ -23,7 +23,7 @@
             // Apps
             'app.dashboards',
             'app.calendar',
-         //   'app.e-commerce',
+            'app.e-commerce',
             'app.mail',
             'app.chat',
         //    'app.file-manager',
@@ -31,6 +31,7 @@
             'app.gantt-chart',
             'app.todo',
             'app.contacts',
+          'app.pages.invoice'
           //  'app.notes',
 
             // Pages

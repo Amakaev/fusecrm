@@ -15,7 +15,7 @@
                 url      : '/pages/invoice/modern',
                 views    : {
                     'content@app': {
-                        templateUrl: 'app/main/pages/invoice/views/modern/modern.html',
+                        templateUrl: 'app/main/apps/invoice/views/modern/modern.html',
                         controller : 'InvoiceController as vm'
                     }
                 },
@@ -31,7 +31,7 @@
                 url      : '/pages/invoice/compact',
                 views    : {
                     'content@app': {
-                        templateUrl: 'app/main/pages/invoice/views/compact/compact.html',
+                        templateUrl: 'app/main/apps/invoice/views/compact/compact.html',
                         controller : 'InvoiceController as vm'
                     }
                 },
@@ -45,7 +45,7 @@
             });
 
         // Translation
-        $translatePartialLoaderProvider.addPart('app/main/pages/invoice');
+        $translatePartialLoaderProvider.addPart('app/main/apps/invoice');
 
         // Api
         msApiProvider.register('invoice', ['app/data/invoice/invoice.json']);
@@ -54,7 +54,7 @@
         msNavigationServiceProvider.saveItem('apps.invoice', {
             title : 'Invoice',
             icon  : 'icon-receipt',
-            weight: 4
+            weight: 11
         });
 
         msNavigationServiceProvider.saveItem('apps.invoice.modern', {
